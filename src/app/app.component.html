@@ -30,18 +30,52 @@
       </li>
 
       <li (click)="toggleDropdown('directives')">
-        <span>Directives</span>
+        <span>2.Directives</span>
         <ul *ngIf="activeDropdown === 'directives'" class="subtopics">
-          <li (click)="loadContent('ngIf')">ngIf</li>
-          <li (click)="loadContent('ngFor')">ngFor</li>
+          <!-- <li><a routerLink="/" class="nav-link">T</a></li> -->
+          <li><a routerLink="/" class="nav-link">Structural</a></li>
+          <li><a routerLink="/" class="nav-link">Attribute</a></li>
+          <li><a routerLink="/" class="nav-link">Custom</a></li>
         </ul>
       </li>
 
-      <li (click)="toggleDropdown('routing')">
-        <span>Routing</span>
-        <ul *ngIf="activeDropdown === 'routing'" class="subtopics">
-          <li (click)="loadContent('Basic Routing')">Basic Routing</li>
-          <li (click)="loadContent('Lazy Loading')">Lazy Loading</li>
+      <li (click)="toggleDropdown('pipe')">
+        <span>3.Pipe</span>
+        <ul *ngIf="activeDropdown === 'pipe'" class="subtopics">
+          <li><a routerLink="/" class="nav-link">Built-in Pipes</a></li>
+          <li><a routerLink="/" class="nav-link">Custom Pipe</a></li>
+        </ul>
+      </li>
+
+      <li (click)="toggleDropdown('parent-child')">
+        <span>4.Parent-Child</span>
+        <ul *ngIf="activeDropdown === 'parent-child'" class="subtopics">
+          <!-- <li><a routerLink="/" class="nav-link">T</a></li> -->
+          <li><a routerLink="/" class="nav-link">Parent-Child</a></li>
+        </ul>
+      </li>
+
+      <li (click)="toggleDropdown('hooks')">
+        <span>6.Hooks</span>
+        <ul *ngIf="activeDropdown === 'hooks'" class="subtopics">
+          <li><a routerLink="/hooks/constructor" class="nav-link">Constructor</a></li>
+          <li><a routerLink="/hooks/on-changes" class="nav-link">1.ngOnChanges</a></li>
+          <li><a routerLink="/hooks/on-init" class="nav-link">2.ngOnInit</a></li>
+          <li><a routerLink="/hooks/do-check" class="nav-link">3.ngDoCheck</a></li>
+          <li><a routerLink="/hooks/after-content-init" class="nav-link">4.ngAfterContentInit</a></li>
+          <li><a routerLink="/hooks/after-content-checked" class="nav-link">5.ngAfterContentChecked</a></li>
+          <li><a routerLink="/hooks/after-view-init" class="nav-link">6.ngAfterViewInit</a></li>
+          <li><a routerLink="/hooks/after-view-checked" class="nav-link">7.ngAfterViewChecked</a></li>
+          <li><a routerLink="/hooks/destroy" class="nav-link">8.ngOnDestroy</a></li>
+        </ul>
+      </li>
+
+      <li (click)="toggleDropdown('forms')">
+        <span>7.Forms</span>
+        <ul *ngIf="activeDropdown === 'forms'" class="subtopics">
+          <!-- <li><a routerLink="/" class="nav-link">T</a></li> -->
+          <li><a routerLink="/" class="nav-link">1.Template Driven</a></li>
+          <li><a routerLink="/" class="nav-link">2.Reactive </a></li>
         </ul>
       </li>
     </ul>

@@ -2,13 +2,18 @@
   <!-- Sidebar -->
   <nav [class.closed]="isSidebarClosed" class="sidebar">
     <div class="title-topics">
-      <h3>Angular Topics</h3>
+      <h3 style="margin-right: 20px;"><span>ANGULAR</span><br><span>TOPICS</span></h3>
     </div>
+    
 
     <div class="sidebar-toggle" (click)="toggleSidebar()">☰</div>
-    <div class="theme-toggle" (click)="toggleTheme()">
+    <!-- <div class="theme-toggle" (click)="toggleTheme()">
       {{ isDarkMode ? '🌞' : '🌙' }}
+    </div> -->
+    <div class="theme-toggle" (click)="toggleTheme()">
+      <span class="moon-sun-icon">{{ isDarkMode ? '🌞' : '🌙' }}</span>
     </div>
+
     <ul>
 
       <!-- <li>

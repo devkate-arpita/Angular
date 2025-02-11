@@ -1,0 +1,12 @@
+<p>profile works!</p>
+<div class="main">
+<div class="card">
+    <img [src]="userImage" alt="User Avatar">
+    <h2 *ngIf="!isEditing">{{ userName }}</h2>
+    <input *ngIf="isEditing" [(ngModel)]="userName" placeholder="Enter Name">
+    <button (click)="toggleEdit()">
+      {{ isEditing ? 'Save' : 'Edit' }}
+    </button>
+  </div>
+</div>
+  

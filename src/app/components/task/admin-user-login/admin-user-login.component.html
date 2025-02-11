@@ -1,0 +1,29 @@
+<div class="login-card">
+    <h2>{{ isAdminLogin ? 'Admin Login' : 'User Login' }}</h2>
+  
+    <!-- Show login form if user is NOT logged in -->
+    <div *ngIf="!isLoggedIn">
+      <label>Username:</label>
+      <input type="text" [(ngModel)]="enteredUsername" placeholder="Enter username">
+  
+      <label>Password:</label>
+      <div class="password-container">
+        <input type="text" [(ngModel)]="enteredPassword" placeholder="Enter password">
+      </div>
+  
+      <button (click)="login()">Login</button>
+      <button class="toggle-btn" (click)="toggleLoginMode()">
+        Switch to {{ isAdminLogin ? 'User' : 'Admin' }} Login
+      </button>
+    </div>
+  
+    <!-- Show success message and logout button if logged in -->
+    <div *ngIf="isLoggedIn">
+      <p class="success-message">{{ loginMessage }}</p>
+      <button class="logout-btn" (click)="logout()">Logout</button>
+    </div>
+  
+    <!-- Show login error message -->
+    <p class="error-message" *ngIf="!isLoggedIn && loginMessage">{{ loginMessage }}</p>
+  </div>
+  

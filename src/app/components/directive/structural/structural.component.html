@@ -1,0 +1,59 @@
+<p>structural works!</p>
+
+<p>*ngIf - Conditionally includes or removes an element based on a boolean expression.</p><hr>
+
+<p *ngIf="isVisible">This para will visible if isVisible is true</p>
+<hr>
+
+<p><b>Using else:</b></p>
+<p *ngIf="isVisible; else elseBlock">This is visible</p>
+<ng-template #elseBlock>
+    <p>content of elseBlock</p>
+</ng-template>
+<hr>
+
+<p><b> Using *ngIf with then and else</b></p>
+
+<ng-container *ngIf="isLoggedIn ; then loggedIn; else loggedOut"></ng-container>
+
+<ng-template #loggedIn> 
+    <p>Welcome User</p>
+    <input type="text">
+</ng-template>
+
+<ng-template #loggedOut> 
+    <p>Welcome User</p>
+</ng-template>
+<hr>
+
+<p><b>Using *ngFor</b></p>
+
+<ul>
+    <li style="list-style-type: none;"*ngFor ="let item of items">{{item}}</li>
+</ul>
+
+<hr>
+
+<p><b>Using *ngSwitchCase</b></p>
+<!--<h3>Select a color:</h3>
+<select [(ngModel)]="color">
+  <option value="red">Red</option>
+  <option value="blue">Blue</option>
+  <option value="green">Green</option>
+</select>-->
+
+<div [ngSwitch]="color">
+  <p *ngSwitchCase="'red'" style="color: red;">Red color selected</p>
+  <p *ngSwitchCase="'blue'" style="color: blue;">Blue color selected</p>
+  <p *ngSwitchCase="'green'" style="color: green;">Green color selected</p>
+  <p *ngSwitchDefault style="color: gray;">Default color selected</p>
+</div>
+
+<button (click)="changeColor('red')" style="background-color: red;">Red</button>
+<button (click)="changeColor('blue')" style="background-color: blue;">Blue</button>
+<button (click)="changeColor('green')" style="background-color: green;">Green</button>
+<button (click)="changeColor('purple')" style="background-color: purple;">Purple (default)</button>
+<hr>
+
+
+

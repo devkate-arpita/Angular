@@ -35,15 +35,18 @@
           <li><a routerLink="/databinding/event-binding" class="nav-link">Event Binding</a></li>
           <li><a routerLink="/databinding/property-binding" class="nav-link">Property Binding</a></li>
           <li><a routerLink="/databinding/two-way-binding" class="nav-link">Two-way Binding</a></li>
+          <li><a routerLink="/databinding/summary" class="nav-link">Summary</a></li>
+          <li><a routerLink="/databinding/Task" class="nav-link">Task</a></li>
+
         </ul>
       </li>
 
-      <li (click)="toggleDropdown('directives')">
+      <li (click)="toggleDropdown('directive')">
         <span>2.Directives</span>
-        <ul *ngIf="activeDropdown === 'directives'" class="subtopics">
+        <ul *ngIf="activeDropdown === 'directive'" class="subtopics">
           <!-- <li><a routerLink="/" class="nav-link">T</a></li> -->
-          <li><a routerLink="/" class="nav-link">Structural</a></li>
-          <li><a routerLink="/" class="nav-link">Attribute</a></li>
+          <li><a routerLink="/directive/structural"class="nav-link">Structural</a></li>
+          <li><a routerLink="/directive/attribute" class="nav-link">Attribute</a></li>
           <li><a routerLink="/" class="nav-link">Custom</a></li>
         </ul>
       </li>
@@ -52,7 +55,7 @@
         <span>3.Pipe</span>
         <ul *ngIf="activeDropdown === 'pipe'" class="subtopics">
           <li><a routerLink="/" class="nav-link">Built-in Pipes</a></li>
-          <li><a routerLink="/" class="nav-link">Custom Pipe</a></li>
+          <li><a routerLink="/pipe" class="nav-link">Custom Pipe</a></li>
         </ul>
       </li>
 
@@ -87,8 +90,27 @@
           <li><a routerLink="/" class="nav-link">2.Reactive </a></li>
         </ul>
       </li>
-    </ul>
+
+      <li (click)="toggleDropdown('task')">
+        <span>8.Daily Task</span>
+        <ul *ngIf="activeDropdown === 'task'" class="subtopics">
+          <!-- <li><a routerLink="/" class="nav-link">T</a></li> -->
+          <li><a routerLink="/task/profile" class="nav-link">1.Profile</a></li>
+          <li><a routerLink="/task/angular-material" class="nav-link">2.Angular Material</a></li>
+          <li><a routerLink="/task/admin-user-login" class="nav-link">2.Admin-User-LoginForm</a></li>
+
+          
+        </ul>
+      </li>
+   
+   
+  </ul>
+
+
   </nav>
+  
+ 
+
 
   <!-- Content Area -->
   <main class="content">

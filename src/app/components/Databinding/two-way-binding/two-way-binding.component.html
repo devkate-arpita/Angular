@@ -1,1 +1,7 @@
 <p>two-way-binding works!</p>
+<p>Synchronizes data between the component and the template in both directions.</p>
+<p>Used with ngModel (requires <b>FormsModule</b> in <b>app.module.ts</b>).</p>
+
+<input [(ngModel)] ="name" />
+<p>Your name: {{ name }}</p>
+

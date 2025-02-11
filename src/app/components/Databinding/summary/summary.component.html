@@ -1,0 +1,17 @@
+<h1>Summary</h1>
+<table border="1">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Syntax</th>
+      <th>Direction</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of tableData">
+      <td><b>{{ row.type }}</b></td>
+      <td><code [innerHTML]="row.syntax"></code></td>
+      <td>{{ row.direction }}</td>
+    </tr>
+  </tbody>
+</table>

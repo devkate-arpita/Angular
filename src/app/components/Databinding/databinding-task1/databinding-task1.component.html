@@ -1,0 +1,39 @@
+<div class="profile-card">
+    <!--<label>Name:</label>
+        <input type="text" [(ngModel)]="user.name" placeholder="Enter name"><br>
+    
+    <label>Email:</label>
+          <input type="text" [(ngModel)]="user.email" placeholder="Enter email"><br>
+    <label>Phone:</label>
+          <input type="text" [(ngModel)]="user.phone" placeholder="Enter phone no"><br>
+    <label>Age:</label>
+          <input type="text" [(ngModel)]="user.age" placeholder="Enter phone no">-->
+    
+    <p>Name: {{ user.name }}</p>
+    <p>Email: {{ user.email }}</p>
+    <p>Phone: {{ user.phone}}</p>
+    <p>Age:{{user.age}}</p>
+    
+    <button *ngIf="!isEditing" (click)="toggleEdit()">{{isEditing? 'cancel':'Edit profile'}}</button>
+   
+    <div *ngIf="isEditing">
+        <label>Name:
+        <input type="text" [(ngModel)]="editUser.name"></label><br>
+        <label>Email:
+            <input type="text" [(ngModel)]="editUser.email"></label><br>
+        <label>Phone:
+            <input type="text" [(ngModel)]="editUser.phone"></label><br>
+        <label>Age:
+            <input type="text" [(ngModel)]="editUser.age"></label><br>
+            
+    </div>
+    
+    <button (click)="toggleEdit()" *ngIf="isEditing">save</button>
+    
+    </div>
+    
+    
+                
+    
+    
+    

@@ -1,0 +1,54 @@
+<div class="pipes-container">
+    <h2 class="title">Angular Built-in Pipes Demo</h2>
+  
+    <!-- Date Pipe -->
+    <div class="pipe-section">
+      <h3>Date Pipe </h3>
+      <p>Date: <span>{{ today | date:'fullDate' }}</span></p>
+    </div>
+  
+    <!-- Uppercase Pipe -->
+    <div class="pipe-section">
+      <h3>Uppercase Pipe</h3>
+      <p>Original: <span>{{ msg }}</span></p>
+      <p>Uppercase: <span>{{ msg | uppercase }}</span></p>
+    </div>
+  
+    <!-- Lowercase Pipe -->
+    <div class="pipe-section">
+      <h3>Lowercase Pipe</h3>
+      <p>{{ 'HELLO WORLD' | lowercase }}</p>
+    </div>
+  
+    <!-- Currency Pipe -->
+    <div class="pipe-section">
+      <h3>Currency Pipe</h3>
+      <p>Default: <span>{{ 1000 | currency:'USD' }}</span></p>
+      <p>Custom: <span>{{ value | currency:'USD':'symbol-narrow' }}</span></p>
+    </div>
+  
+    <!-- Decimal Pipe -->
+    <div class="pipe-section">
+      <h3>Decimal Pipe</h3>
+      <p>{{ amount | number:'1.2-2' }}</p>
+    </div>
+  
+    <!-- Percentage Pipe -->
+    <div class="pipe-section">
+      <h3>Percentage Pipe</h3>
+      <p>{{ percentage | percent }}</p>
+    </div>
+  
+    <!-- JSON Pipe -->
+    <div class="pipe-section">
+      <h3>JSON Pipe</h3>
+      <p>{{ {name:'arpita',age:23} | json }}</p>
+    </div>
+  
+    <!-- Slice Pipe -->
+    <div class="pipe-section">
+      <h3>Slice Pipe</h3>
+      <p>{{ 'Hello World' | slice:0:5 }}</p>
+    </div>
+  </div>
+  

@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./pipe.component.css']
 })
 export class PipeComponent {
+  userInput ='';
 
 }

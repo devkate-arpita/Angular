@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./attribute.component.css']
 })
 export class AttributeComponent {
-
+isSuccess=true;
+isVisible=true;
+isDisable=true;
 }
+
+

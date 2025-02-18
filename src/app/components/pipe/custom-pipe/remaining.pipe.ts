@@ -5,8 +5,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class RemainingPipe implements PipeTransform {
 
-  transform(value: string): string {
-    return `Remaining: ${value}`;
+  transform(value: string): boolean {
+   
+    return value.length >= 5; // Disable if length is greater than 5
   }
-
 }

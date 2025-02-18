@@ -14,11 +14,18 @@ import { ProfileComponent } from './components/task/profile/profile.component';
 import { TaskComponent } from './components/task/task.component';
 import { AdminUserLoginComponent } from './components/task/admin-user-login/admin-user-login.component';
 import { PipeComponent } from './components/pipe/pipe.component';
-import { RemainingPipe } from './components/pipe/remaining.pipe';
+import { RemainingPipe } from './components/pipe/custom-pipe/remaining.pipe';
 import { DirectiveComponent } from './components/directive/directive.component';
 import { StructuralComponent } from './components/directive/structural/structural.component';
 import { AttributeComponent } from './components/directive/attribute/attribute.component';
 import { DatabindingTask1Component } from './components/Databinding/databinding-task1/databinding-task1.component';
+import { CustomDirectiveComponent } from './components/directive/custom-directive/custom-directive.component';
+import { HighlightsDirective } from './components/directive/custom-directive/highlights.directive';
+import { BuiltInPipesComponent } from './components/pipe/built-in-pipes/built-in-pipes.component';
+import { CustomPipeComponent } from './components/pipe/custom-pipe/custom-pipe.component';
+import { ParentComponent } from './components/ParentChild/parent/parent.component';
+import { Child1Component } from './components/ParentChild/parent/child1/child1.component';
+import { Child2Component } from './components/ParentChild/parent/child2/child2.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +44,14 @@ import { DatabindingTask1Component } from './components/Databinding/databinding-
     DirectiveComponent,
     StructuralComponent,
     AttributeComponent,
-    DatabindingTask1Component
+    DatabindingTask1Component,
+    HighlightsDirective,
+    CustomDirectiveComponent,
+    BuiltInPipesComponent,
+    CustomPipeComponent,
+    ParentComponent,
+    Child1Component,
+    Child2Component
   ],
   imports: [
     BrowserModule,

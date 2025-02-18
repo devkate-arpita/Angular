@@ -12,12 +12,11 @@
     transition: all 0.5s ease;
   }
   
-  /* 🌙 Dark Theme */
-  body.dark-theme {
+  
+  .sidebar.dark-theme {
     background: linear-gradient(135deg, #1c1c1c, #292929);
     color: white;
   }
-  
   /* 📌 Layout Container */
   .container {
     display: flex;

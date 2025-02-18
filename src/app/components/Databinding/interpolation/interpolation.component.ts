@@ -6,9 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./interpolation.component.css']
 })
 export class InterpolationComponent {
-  
-    username = 'Arpita';
-  }
-  
+  username='arpita';
+
+}  
 
 

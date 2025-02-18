@@ -42,7 +42,7 @@
   <option value="green">Green</option>
 </select>-->
 
-<div [ngSwitch]="color">
+<div [ngSwitch] ="color">
   <p *ngSwitchCase="'red'" style="color: red;">Red color selected</p>
   <p *ngSwitchCase="'blue'" style="color: blue;">Blue color selected</p>
   <p *ngSwitchCase="'green'" style="color: green;">Green color selected</p>

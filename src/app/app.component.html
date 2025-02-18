@@ -47,15 +47,15 @@
           <!-- <li><a routerLink="/" class="nav-link">T</a></li> -->
           <li><a routerLink="/directive/structural"class="nav-link">Structural</a></li>
           <li><a routerLink="/directive/attribute" class="nav-link">Attribute</a></li>
-          <li><a routerLink="/" class="nav-link">Custom</a></li>
+          <li><a routerLink="/directive/custom-directive" class="nav-link">Custom</a></li>
         </ul>
       </li>
 
       <li (click)="toggleDropdown('pipe')">
         <span>3.Pipe</span>
         <ul *ngIf="activeDropdown === 'pipe'" class="subtopics">
-          <li><a routerLink="/" class="nav-link">Built-in Pipes</a></li>
-          <li><a routerLink="/pipe" class="nav-link">Custom Pipe</a></li>
+          <li><a routerLink="/pipe/built-in-pipes" class="nav-link">Built-in Pipes</a></li>
+          <li><a routerLink="/pipe/custom-pipe" class="nav-link">Custom Pipe</a></li>
         </ul>
       </li>
 
@@ -63,7 +63,11 @@
         <span>4.Parent-Child</span>
         <ul *ngIf="activeDropdown === 'parent-child'" class="subtopics">
           <!-- <li><a routerLink="/" class="nav-link">T</a></li> -->
-          <li><a routerLink="/" class="nav-link">Parent-Child</a></li>
+          <li><a routerLink="/parentChild/parent"class="nav-link">Parent</a></li>
+          <li><a routerLink="/parentChild/parent/child1"class="nav-link">child1</a></li>
+          <li><a routerLink="/parentChild/parent/child2"class="nav-link">child2</a></li>
+
+
         </ul>
       </li>
 

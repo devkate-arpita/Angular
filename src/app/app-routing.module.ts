@@ -14,6 +14,12 @@ import { StructuralComponent } from './components/directive/structural/structura
 import { AttributeComponent } from './components/directive/attribute/attribute.component';
 import { DirectiveComponent } from './components/directive/directive.component';
 import { DatabindingTask1Component } from './components/Databinding/databinding-task1/databinding-task1.component';
+import { CustomDirectiveComponent } from './components/directive/custom-directive/custom-directive.component';
+import { BuiltInPipesComponent } from './components/pipe/built-in-pipes/built-in-pipes.component';
+import { CustomPipeComponent } from './components/pipe/custom-pipe/custom-pipe.component';
+import { ParentComponent } from './components/ParentChild/parent/parent.component';
+import { Child1Component } from './components/ParentChild/parent/child1/child1.component';
+import { Child2Component } from './components/ParentChild/parent/child2/child2.component';
 
 const routes: Routes = [
   {path:'html-css',component:HtmlCssComponent},
@@ -41,14 +47,39 @@ const routes: Routes = [
     component: DirectiveComponent,
     children: [
       { path: 'structural', component: StructuralComponent },
-      {path:'attribute',component:AttributeComponent}
+      {path:'attribute',component:AttributeComponent},
+      {path:'custom-directive',component:CustomDirectiveComponent}
       // Child route
     ]
   },
   
   {path:'directive/structural',component:StructuralComponent},
   {path:'directive/attribute',component:AttributeComponent},
-  
+  {path:'directive/custom-directive',component:CustomDirectiveComponent},
+
+  {
+    path:'pipe',
+    component:PipeComponent,
+    children:[
+      {path:'built-in-pipes',component:BuiltInPipesComponent},
+      {path:'custom-pipe',component:CustomPipeComponent}
+    ]
+  },
+
+  {path:'pipe/built-in-pipes',component:BuiltInPipesComponent},
+  {path:'pipe/custom-pipe',component:CustomPipeComponent},
+
+  {
+    path:'parentChild/parent',
+    component:ParentComponent,
+    children:[
+      {path:'child1',component:Child1Component},
+      {path:'child2',component:Child2Component}
+    ]
+  },
+
+  {path:'parentChild/parent/child1',component:Child1Component},
+  {path:'parentChild/parent/child2',component:Child2Component},
   { path: '**', redirectTo: 'task' },
 
 ];

@@ -1,0 +1,37 @@
+<div>
+   
+    <!--<div>
+        <app-child1 [message]="messageForChild1" 
+        (messageEvent)="handleChild1Message($event)"></app-child1>
+    </div>-->
+    <div class="parent-container">
+        <p><b> Parent Component</b></p>
+    
+        <div class="child-wrapper">
+            <app-child1 [message]="messageForChild1" 
+            (messageEvent)="handleChild1Message($event)"></app-child1>
+        </div>
+    
+        <div class="child-wrapper">
+            <app-child2 [message]="messageForChild2" 
+            (messageEvent)="handleChild2Message($event)"></app-child2>
+        </div>
+    
+      
+            <h3> Messages from Children:</h3>
+            <p>Child 1 says: {{ child1Message }}</p>
+            <p>Child 2 says: {{ child2Message }}</p>
+    </div>
+    
+   <!-- <div>
+        <app-child2 [message]="messageForChild2" 
+        (messageEvent)="handleChild1Message($event)"></app-child2>
+    </div>-->
+
+    
+</div>
+
+
+<!--<h3>Messages from Children:</h3>
+<p>Child 1 says: {{ child1Message }}</p>
+<p>Child 2 says: {{ child2Message }}</p>-->

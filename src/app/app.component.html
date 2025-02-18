@@ -48,6 +48,7 @@
           <li><a routerLink="/directive/structural"class="nav-link">Structural</a></li>
           <li><a routerLink="/directive/attribute" class="nav-link">Attribute</a></li>
           <li><a routerLink="/directive/custom-directive" class="nav-link">Custom</a></li>
+          <li><a routerLink="/directive/directive-task" class="nav-link">Task</a></li>
         </ul>
       </li>
 
@@ -74,15 +75,15 @@
       <li (click)="toggleDropdown('hooks')">
         <span>6.Hooks</span>
         <ul *ngIf="activeDropdown === 'hooks'" class="subtopics">
-          <li><a routerLink="/hooks/constructor" class="nav-link">Constructor</a></li>
-          <li><a routerLink="/hooks/on-changes" class="nav-link">1.ngOnChanges</a></li>
-          <li><a routerLink="/hooks/on-init" class="nav-link">2.ngOnInit</a></li>
+          <li><a routerLink="/hooks-lifecycle/parent-hooks" class="nav-link">Parent</a></li>
+          <li><a routerLink="parentChild/parent-hooks/child-hooks" class="nav-link">Child</a></li>
+          <!--<li><a routerLink="/hooks/on-init" class="nav-link">2.ngOnInit</a></li>
           <li><a routerLink="/hooks/do-check" class="nav-link">3.ngDoCheck</a></li>
           <li><a routerLink="/hooks/after-content-init" class="nav-link">4.ngAfterContentInit</a></li>
           <li><a routerLink="/hooks/after-content-checked" class="nav-link">5.ngAfterContentChecked</a></li>
           <li><a routerLink="/hooks/after-view-init" class="nav-link">6.ngAfterViewInit</a></li>
           <li><a routerLink="/hooks/after-view-checked" class="nav-link">7.ngAfterViewChecked</a></li>
-          <li><a routerLink="/hooks/destroy" class="nav-link">8.ngOnDestroy</a></li>
+          <li><a routerLink="/hooks/destroy" class="nav-link">8.ngOnDestroy</a></li>-->
         </ul>
       </li>
 
@@ -95,12 +96,35 @@
         </ul>
       </li>
 
+      <li (click)="toggleDropdown('html-css')">
+        <span>8.HTML-CSS</span>
+        <ul *ngIf="activeDropdown === 'html-css'" class="subtopics">
+          <!-- <li><a routerLink="/" class="nav-link">T</a></li> -->
+          <li><a routerLink="/HTML-CSS/login-form" class="nav-link">1.Login-Form</a></li>
+          <!--<li><a routerLink="/HTML-CSS/login-form/login" class="nav-link">2.login</a></li>
+          <li><a routerLink="/task/admin-user-login" class="nav-link">2.Admin-User-LoginForm</a></li>-->
+
+          
+        </ul>
+      </li>
+
+      <li (click)="toggleDropdown('angular-material')">
+        <span>9.Angular Material</span>
+        <ul *ngIf="activeDropdown === 'angular-material'" class="subtopics">
+          <li><a routerLink="/angular-material" class="nav-link">angular-material</a></li> 
+          <!--<li><a routerLink="/task/profile" class="nav-link">1.Profile</a></li>
+          <li><a routerLink="/task/angular-material" class="nav-link">2.Angular Material</a></li>
+          <li><a routerLink="/task/admin-user-login" class="nav-link">2.Admin-User-LoginForm</a></li>-->
+
+          
+        </ul>
+      </li>
+
       <li (click)="toggleDropdown('task')">
-        <span>8.Daily Task</span>
+        <span>10.Daily Task</span>
         <ul *ngIf="activeDropdown === 'task'" class="subtopics">
           <!-- <li><a routerLink="/" class="nav-link">T</a></li> -->
           <li><a routerLink="/task/profile" class="nav-link">1.Profile</a></li>
-          <li><a routerLink="/task/angular-material" class="nav-link">2.Angular Material</a></li>
           <li><a routerLink="/task/admin-user-login" class="nav-link">2.Admin-User-LoginForm</a></li>
 
           

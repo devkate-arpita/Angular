@@ -1,0 +1,10 @@
+<h1>User list</h1>
+
+<p *ngIf="user.length==0">no user found</p>
+
+<ul>
+    <li *ngFor="let users of user" [ngClass]="{ 'active-user': users.status === 'active', 'inactive-user': users.status === 'inactive' }">
+        {{ users.name }} - {{ users.status }}
+    </li>
+
+</ul>

@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HtmlCssComponent } from './components/html-css/html-css.component';
 import { InterpolationComponent } from './components/Databinding/interpolation/interpolation.component';
 import { PropertyBindingComponent } from './components/Databinding/property-binding/property-binding.component';
 import { EventBindingComponent } from './components/Databinding/event-binding/event-binding.component';
@@ -26,11 +25,26 @@ import { CustomPipeComponent } from './components/pipe/custom-pipe/custom-pipe.c
 import { ParentComponent } from './components/ParentChild/parent/parent.component';
 import { Child1Component } from './components/ParentChild/parent/child1/child1.component';
 import { Child2Component } from './components/ParentChild/parent/child2/child2.component';
+import { HtmlCssComponent } from './components/html-css/html-css.component';
+import { LoginFormComponent } from './components/HTML -CSS/login-form/login-form.component';
+import { HomeComponent } from './components/HTML -CSS/login-form/home/home.component';
+import { LoginComponent } from './components/HTML -CSS/login-form/login/login.component';
+import { RegistrationComponent } from './components/HTML -CSS/login-form/registration/registration.component';
+import { AngularMaterialComponent } from './components/angular-material/angular-material.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
+import { DirectiveTaskComponent } from './components/directive/directive-task/directive-task.component';
+import { CommonModule } from '@angular/common';
+import { ChildHooksComponent } from './components/hooks-lifecycle/parent-hooks/child-hooks/child-hooks.component';
+import { HooksParentComponent } from './components/hooks/hooks-parent/hooks-parent.component';
+import { HooksChildComponent } from './components/hooks/hooks-parent/hooks-child/hooks-child.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HtmlCssComponent,
     InterpolationComponent,
     PropertyBindingComponent,
     EventBindingComponent,
@@ -51,12 +65,33 @@ import { Child2Component } from './components/ParentChild/parent/child2/child2.c
     CustomPipeComponent,
     ParentComponent,
     Child1Component,
-    Child2Component
+    Child2Component,
+    HtmlCssComponent,
+    LoginFormComponent,
+    HomeComponent,
+    LoginComponent,
+    RegistrationComponent,
+    DirectiveTaskComponent,
+    ChildHooksComponent,
+    ParentComponent,
+    HooksParentComponent,
+    HooksChildComponent,
+  
+    
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatIconModule,  
+    MatButtonModule,
+    MatInputModule,
+    AngularMaterialComponent,
+    CommonModule
+
     
   ],
   providers: [],

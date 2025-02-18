@@ -1,0 +1,14 @@
+.active-user {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .inactive-user {
+    color: red;
+    font-style: italic;
+  }
+
+  li{
+    list-style-type: none;
+  }
+  

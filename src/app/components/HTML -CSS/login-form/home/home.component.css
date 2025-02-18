@@ -1,0 +1,61 @@
+/* Background Styling */
+.home-container {
+    position: relative;
+    height: 100vh;
+    background: url('https://source.unsplash.com/1600x900/?technology,nature') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Overlay Effect */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(70, 66, 66, 0.6);
+  }
+  
+  /* Main Content Styling */
+  .content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+  }
+  
+  /* App Name Styling */
+  .app-name {
+    color: #ffcc00;
+    font-weight: bold;
+  }
+  
+  /* Button Styling */
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 8px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-outline-light {
+    border: 2px solid white;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 8px;
+    color: white;
+  }
+  
+  .btn-outline-light:hover {
+    background-color: white;
+    color: black;
+  }
+  

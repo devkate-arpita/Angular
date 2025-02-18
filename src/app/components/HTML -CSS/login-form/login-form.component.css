@@ -1,0 +1,54 @@
+/* 🌟 Custom Navigation Bar Styling */
+.navbar {
+    background-color: #007bff !important; /* Custom background */
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between; /* Ensures proper spacing */
+    align-items: center;
+}
+
+/* 🌟 Align Navbar Links in One Line */
+.navbar-nav {
+    display: flex;
+    flex-direction: row; /* Ensures links stay in a single line */
+    gap: 15px; /* Adds spacing between links */
+}
+
+/* 🌟 Navbar Brand */
+.navbar-brand {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff !important;
+}
+
+/* 🌟 Navbar Links */
+.navbar-nav .nav-item .nav-link {
+    color: #fff !important;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+/* 🌟 Hover Effect */
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+}
+
+/* 🌟 Navbar Toggler (for mobile) */
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}

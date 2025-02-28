@@ -1,0 +1,88 @@
+<div class="container">
+    <h2>Registration Form</h2>
+
+    <form #registrationForm="ngForm" (ngSubmit)="onSubmit()">
+        <!-- Full Name -->
+        <div class="mb-3">
+            <label>Full Name</label>
+            <input type="text" class="form-control" name="fullName" [(ngModel)]="user.fullName" required minlength="3" #fullName="ngModel">
+            <small class="text-danger" *ngIf="fullName.invalid && fullName.touched">
+                Name must be at least 3 characters.
+            </small>
+        </div>
+
+        <!-- Email -->
+        <div class="mb-3">
+            <label>Email</label>
+            <input type="email" class="form-control" name="email" [(ngModel)]="user.email" required email #email="ngModel">
+            <small class="text-danger" *ngIf="email.invalid && email.touched">
+                Enter a valid email.
+            </small>
+        </div>
+
+        <!-- Password -->
+        <div class="mb-3">
+            <label>Password</label>
+            <input type="password" class="form-control" name="password" [(ngModel)]="user.password" required minlength="6" #password="ngModel">
+            <small class="text-danger" *ngIf="password.invalid && password.touched">
+                Password must be at least 6 characters.
+            </small>
+        </div>
+
+        <!-- Confirm Password -->
+        <div class="mb-3">
+            <label>Confirm Password</label>
+            <input type="password" class="form-control" name="confirmPassword" [(ngModel)]="user.confirmPassword" required #confirmPassword="ngModel">
+            <small class="text-danger" *ngIf="user.password !== user.confirmPassword && confirmPassword.touched">
+                Passwords do not match.
+            </small>
+        </div>
+
+        <!-- Gender  -->
+        <div class="mb-3">
+            <label>Gender</label>
+            <input type="radio" name="gender" [(ngModel)]="user.gender" value="male" required> Male
+            <input type="radio" name="gender" [(ngModel)]="user.gender" value="female"> Female
+            <small class="text-danger d-block" *ngIf="registrationForm.controls['gender']?.invalid && registrationForm.controls['gender']?.touched">
+                Please select a gender.
+            </small>
+        </div>
+
+        <!-- Country-->
+        <div class="mb-3">
+            <label>Country</label>
+            <select class="form-control" name="country" [(ngModel)]="user.country" required #country="ngModel">
+                <option value="">Select Country</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="India">India</option>
+                <option value="UK">UK</option>
+            </select>
+            <small class="text-danger" *ngIf="country.invalid && country.touched">
+                Please select a country.
+            </small>
+        </div>
+
+        <!-- Address -->
+        <div class="mb-3">
+            <label>Address</label>
+            <textarea class="form-control" name="address" [(ngModel)]="user.address" required minlength="10" #address="ngModel" rows="3"></textarea>
+            <small class="text-danger" *ngIf="address.invalid && address.touched">
+                Address must be at least 10 characters.
+            </small>
+        </div>
+
+        <!-- Agree -->
+        <div class="mb-3">
+            <input type="checkbox" name="agree" [(ngModel)]="user.agree" required #agree="ngModel"> I agree to the terms & conditions
+            <small class="text-danger d-block" *ngIf="agree.invalid && agree.touched">
+                You must accept the terms.
+            </small>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-success" [disabled]="registrationForm.invalid">Submit</button>
+    </form>
+</div>
+
+<!-- <p>{{user.value | json}}</p> -->

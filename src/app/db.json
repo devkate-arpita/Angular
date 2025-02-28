@@ -1,0 +1,239 @@
+{
+  "EmployeeData": [
+    {
+      "id": "f0fa",
+      "name": "Ajinkya",
+      "role": "Sr Software Developer"
+    },
+    {
+      "id": "ed4a",
+      "name": "Arpita Deokate123",
+      "role": "Intern"
+    },
+    {
+      "id": "a1b2",
+      "name": "Rahul Sharma",
+      "role": "Software Engineer"
+    },
+    {
+      "id": "c3d4",
+      "name": "Pooja Patel",
+      "role": "Frontend Developer"
+    },
+    {
+      "id": "e5f6",
+      "name": "Vikas Singh",
+      "role": "Backend Developer"
+    },
+    {
+      "id": "g7h8",
+      "name": "Neha Reddy",
+      "role": "Full Stack Developer"
+    },
+    {
+      "id": "i9j0",
+      "name": "Kiran Kumar",
+      "role": "UI/UX Designer"
+    },
+    {
+      "id": "k1l2",
+      "name": "Sanjay Verma",
+      "role": "QA Engineer"
+    },
+    {
+      "id": "m3n4",
+      "name": "Divya Sharma",
+      "role": "HR Manager"
+    },
+    {
+      "id": "o5p6",
+      "name": "Pratik Joshi",
+      "role": "DevOps Engineer"
+    },
+    {
+      "id": "q7r8",
+      "name": "Sakshi Agarwal",
+      "role": "Data Analyst"
+    },
+    {
+      "id": "s9t0",
+      "name": "Amitabh Das",
+      "role": "Project Manager"
+    },
+    {
+      "id": "u1v2",
+      "name": "Megha Khanna",
+      "role": "Software Developer"
+    },
+    {
+      "id": "w3x4",
+      "name": "Nikhil Mehta",
+      "role": "Database Administrator"
+    },
+    {
+      "id": "y5z6",
+      "name": "Swati Choudhary",
+      "role": "AI Engineer"
+    },
+    {
+      "id": "a7b8",
+      "name": "Rohan Gupta",
+      "role": "Cloud Engineer"
+    },
+    {
+      "id": "c9d0",
+      "name": "Sneha Rajput",
+      "role": "Mobile App Developer"
+    },
+    {
+      "id": "e1f2",
+      "name": "Abhishek Singh",
+      "role": "Game Developer"
+    },
+    {
+      "id": "g3h4",
+      "name": "Payal Tiwari",
+      "role": "Cybersecurity Analyst"
+    },
+    {
+      "id": "i5j6",
+      "name": "Manish Kumar",
+      "role": "Embedded Systems Engineer"
+    },
+    {
+      "id": "k7l8",
+      "name": "Anjali Rao",
+      "role": "System Administrator"
+    },
+    {
+      "id": "m9n0",
+      "name": "Rajesh Iyer",
+      "role": "Network Engineer"
+    },
+    {
+      "id": "o1p2",
+      "name": "Hema Nair",
+      "role": "Business Analyst"
+    },
+    {
+      "id": "q3r4",
+      "name": "Aakash Patel",
+      "role": "Software Architect"
+    },
+    {
+      "id": "s5t6",
+      "name": "Bhavya Kapoor",
+      "role": "Technical Writer"
+    },
+    {
+      "id": "u7v8",
+      "name": "Chirag Bansal",
+      "role": "Customer Support Engineer"
+    },
+    {
+      "id": "w9x0",
+      "name": "Ishita Malhotra",
+      "role": "Digital Marketing Specialist"
+    },
+    {
+      "id": "y1z2",
+      "name": "Siddharth Jain",
+      "role": "SEO Analyst"
+    },
+    {
+      "id": "a3b4",
+      "name": "Lavanya Menon",
+      "role": "Machine Learning Engineer"
+    },
+    {
+      "id": "c5d6",
+      "name": "Sumit Rathore",
+      "role": "Blockchain Developer"
+    },
+    {
+      "id": "e7f8",
+      "name": "Nitin Sharma",
+      "role": "Web Developer"
+    },
+    {
+      "id": "g9h0",
+      "name": "Shruti Desai",
+      "role": "Quality Analyst"
+    },
+    {
+      "id": "i1j2",
+      "name": "Kartik Sinha",
+      "role": "Business Development Executive"
+    },
+    {
+      "id": "k3l4",
+      "name": "Shreya Bhat",
+      "role": "HR Executive"
+    },
+    {
+      "id": "m5n6",
+      "name": "Vivek Sharma",
+      "role": "Finance Manager"
+    },
+    {
+      "id": "o7p8",
+      "name": "Nandini Kulkarni",
+      "role": "IT Support Engineer"
+    },
+    {
+      "id": "q9r0",
+      "name": "Harshad Joshi",
+      "role": "Software Tester"
+    },
+    {
+      "id": "s1t2",
+      "name": "Pallavi Mishra",
+      "role": "Research Scientist"
+    },
+    {
+      "id": "u3v4",
+      "name": "Rajat Kapoor",
+      "role": "Scrum Master"
+    },
+    {
+      "id": "w5x6",
+      "name": "Simran Kaur",
+      "role": "Legal Advisor"
+    },
+    {
+      "id": "y7z8",
+      "name": "Arvind Das",
+      "role": "Ethical Hacker"
+    },
+    {
+      "id": "a9b0",
+      "name": "Tanisha Gupta",
+      "role": "Content Writer"
+    },
+    {
+      "id": "c1d2",
+      "name": "Vikram Nair",
+      "role": "Cloud Security Specialist"
+    },
+    {
+      "id": "e3f4",
+      "name": "Jyoti Prasad",
+      "role": "UX Researcher"
+    },
+    {
+      "id": "g5h6",
+      "name": "Deepak Chawla",
+      "role": "Product Manager"
+    },
+    {
+      "id": "i7j8",
+      "name": "Aishwarya Jain",
+      "role": "Data Scientist"
+    },
+    {
+      "id": "k9l0",
+      "name": "Rakesh Mehta",
+      "role": "Operations Manager"
+    }
+  ]
+}

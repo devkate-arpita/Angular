@@ -1,0 +1,88 @@
+<div class="container">
+    <h2>Registration Form</h2>
+
+    <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+        <!-- Full Name -->
+        <div class="mb-3">
+            <label>Full Name</label>
+            <input type="text" class="form-control" formControlName="fullName">
+            <small class="text-danger" *ngIf="registrationForm.get('fullName')?.invalid && registrationForm.get('fullName')?.touched">
+                Name must be at least 3 characters.
+            </small>
+        </div>
+
+        <!-- Email -->
+        <div class="mb-3">
+            <label>Email</label>
+            <input type="email" class="form-control" formControlName="email">
+            <small class="text-danger" *ngIf="registrationForm.get('email')?.invalid && registrationForm.get('email')?.touched">
+                Enter a valid email.
+            </small>
+        </div>
+
+        <!-- Password -->
+        <div class="mb-3">
+            <label>Password</label>
+            <input type="password" class="form-control" formControlName="password">
+            <small class="text-danger" *ngIf="registrationForm.get('password')?.invalid && registrationForm.get('password')?.touched">
+                Password must be at least 6 characters.
+            </small>
+        </div>
+
+        <!-- Confirm Password -->
+        <div class="mb-3">
+            <label>Confirm Password</label>
+            <input type="password" class="form-control" formControlName="confirmPassword">
+            <small class="text-danger" *ngIf="registrationForm.hasError('passwordMismatch') && registrationForm.get('confirmPassword')?.touched">
+                Passwords do not match.
+            </small>
+        </div>
+
+        <!-- Gender  -->
+        <div class="mb-3">
+            <label>Gender</label>
+            <input type="radio" formControlName="gender" value="male"> Male
+            <input type="radio" formControlName="gender" value="female"> Female
+            <small class="text-danger d-block" *ngIf="registrationForm.get('gender')?.invalid && registrationForm.get('gender')?.touched">
+                Please select a gender.
+            </small>
+        </div>
+
+        <!-- Country  -->
+        <div class="mb-3">
+            <label>Country</label>
+            <select class="form-control" formControlName="country">
+                <option value="">Select Country</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="India">India</option>
+                <option value="UK">UK</option>
+            </select>
+            <small class="text-danger" *ngIf="registrationForm.get('country')?.invalid && registrationForm.get('country')?.touched">
+                Please select a country.
+            </small>
+        </div>
+
+        <!-- Address  -->
+        <div class="mb-3">
+            <label>Address</label>
+            <textarea class="form-control" formControlName="address" rows="3"></textarea>
+            <small class="text-danger" *ngIf="registrationForm.get('address')?.invalid && registrationForm.get('address')?.touched">
+                Address must be at least 10 characters.
+            </small>
+        </div>
+
+        <!-- Agree to Terms -->
+        <div class="mb-3">
+            <input type="checkbox" formControlName="agree"> I agree to the terms & conditions
+            <small class="text-danger d-block" *ngIf="registrationForm.get('agree')?.invalid && registrationForm.get('agree')?.touched">
+                You must accept the terms.
+            </small>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-success" [disabled]="registrationForm.invalid">Submit</button>
+    </form>
+</div>
+
+<p>{{registrationForm.value | json}}</p>

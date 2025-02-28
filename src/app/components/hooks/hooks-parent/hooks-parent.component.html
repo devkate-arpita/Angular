@@ -1,1 +1,13 @@
-<p>hooks-parent works!</p>
+<div class="container mt-4"> 
+    <input type="text" #ref> &nbsp;
+    <button class="btn btn-primary" (click)="onBtnClicked(ref.value)">Submit</button>
+
+
+    <app-hooks-child [msg]="value" *ngIf="!isRemove" class="btn btn-primary">
+        <p #content>Hi</p>
+    </app-hooks-child>
+<br>
+    <button (click)="destroyChild()" class="btn btn-danger" >
+        Delete Child</button>
+</div>
+

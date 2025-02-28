@@ -7,7 +7,7 @@ import { InterpolationComponent } from './components/Databinding/interpolation/i
 import { PropertyBindingComponent } from './components/Databinding/property-binding/property-binding.component';
 import { EventBindingComponent } from './components/Databinding/event-binding/event-binding.component';
 import { TwoWayBindingComponent } from './components/Databinding/two-way-binding/two-way-binding.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SummaryComponent } from './components/Databinding/summary/summary.component';
 import { ProfileComponent } from './components/task/profile/profile.component';
 import { TaskComponent } from './components/task/task.component';
@@ -38,9 +38,16 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { DirectiveTaskComponent } from './components/directive/directive-task/directive-task.component';
 import { CommonModule } from '@angular/common';
-import { ChildHooksComponent } from './components/hooks-lifecycle/parent-hooks/child-hooks/child-hooks.component';
 import { HooksParentComponent } from './components/hooks/hooks-parent/hooks-parent.component';
 import { HooksChildComponent } from './components/hooks/hooks-parent/hooks-child/hooks-child.component';
+import { ReactiveComponent } from './components/Forms/reactive/reactive.component';
+import { FormsTaskComponent } from './components/Forms/forms-task/forms-task.component';
+import { TemplateDrivenComponent } from './components/Forms/template-driven/template-driven.component';
+import { HttpClientModule } from '@angular/common/http';
+import { EmployeeComponent } from './components/Crud-operation/employee/employee.component';
+import { CrudComponent } from './components/Crud-operation-2/crud/crud.component';
+import { EditCrudComponent } from './components/Crud-operation-2/crud/edit-crud/edit-crud.component';
+import { LocalstorageComponent } from './components/Crud-operation-2/localstorage/localstorage.component';
 
 @NgModule({
   declarations: [
@@ -72,10 +79,16 @@ import { HooksChildComponent } from './components/hooks/hooks-parent/hooks-child
     LoginComponent,
     RegistrationComponent,
     DirectiveTaskComponent,
-    ChildHooksComponent,
     ParentComponent,
     HooksParentComponent,
     HooksChildComponent,
+    ReactiveComponent,
+    FormsTaskComponent,
+    TemplateDrivenComponent,
+    EmployeeComponent,
+    CrudComponent,
+    EditCrudComponent,
+    LocalstorageComponent,
   
     
 
@@ -90,7 +103,9 @@ import { HooksChildComponent } from './components/hooks/hooks-parent/hooks-child
     MatButtonModule,
     MatInputModule,
     AngularMaterialComponent,
-    CommonModule
+    CommonModule,
+    ReactiveFormsModule,
+    HttpClientModule
 
     
   ],

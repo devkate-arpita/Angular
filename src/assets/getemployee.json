@@ -1,0 +1,37 @@
+{
+    "data":[
+        {
+            "firstname":"arpita",
+            "lastname":"devkate",
+            "department":"developer",
+            "departmentId":"1",
+            "email":"arpita@gmail",
+            "phoneno":"1234567890"
+            
+        },
+        {
+            "firstname":"anuja",
+            "lastname":"keskar",
+            "department":"sales",
+            "departmentId":"2",
+            "email":"anuja@gmail",
+             "phoneno":"1234567890"
+        },
+        {
+            "firstname":"rutuja",
+            "lastname":"mane",
+            "department":"HR",
+            "departmentId":"3",
+            "email":"rutuja@gmail.com",
+             "phoneno":"1234567890"
+        },
+        {
+            "firstname":"apurva",
+            "lastname":"wagh",
+            "department":"Admin",
+            "departmentId":"4",
+            "email":"apurva@gmail.com",
+             "phoneno":"1234567890"
+        }
+    ]
+}

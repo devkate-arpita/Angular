@@ -1,0 +1,16 @@
+<form (ngSubmit)="onUpdate()">
+    <div class="mb-3">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" name="name"
+            [(ngModel)]="employeeData.name" required>
+    </div>
+
+    <div class="mb-3">
+        <label for="role">Role:</label>
+        <input type="text" class="form-control" id="role" name="role"
+            [(ngModel)]="employeeData.role" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Update</button>
+    <button type="button" class="btn btn-secondary" [routerLink]="['/crud-operation-2/crud']">Cancel</button>
+</form>

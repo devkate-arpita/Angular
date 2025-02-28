@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./hooks-parent.component.css']
 })
 export class HooksParentComponent {
-
-}
+  value:string = '121';
+  isRemove:boolean = false;
+ 
+   onBtnClicked(val:string){
+    this.value = val;
+   }
+ 
+ 
+ 
+   destroyChild(){
+    this.isRemove = !this.isRemove;
+   }
+ }

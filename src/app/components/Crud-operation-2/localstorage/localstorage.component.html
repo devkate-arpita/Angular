@@ -1,0 +1,17 @@
+<div class="container">
+    <h2>Local Storage</h2>
+  
+    <label>Name:</label>
+    <input type="text" [(ngModel)]="userData.name" placeholder="Enter Name"><br><br>
+  
+    <label>Email:</label>
+    <input type="email" [(ngModel)]="userData.email" placeholder="Enter Email"><br><br>
+  
+    <button (click)="saveData()">Save to Local Storage</button>&nbsp;
+    <button (click)="clearData()">Clear Data</button>
+  
+    <h3>Stored Data:</h3>
+    <p *ngIf="storedData">Name: {{ storedData.name }}</p>
+    <p *ngIf="storedData">Email: {{ storedData.email }}</p>
+  </div>
+  

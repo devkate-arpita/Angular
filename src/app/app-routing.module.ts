@@ -26,6 +26,14 @@ import { LoginComponent } from './components/HTML -CSS/login-form/login/login.co
 import { RegistrationComponent } from './components/HTML -CSS/login-form/registration/registration.component';
 import { AngularMaterialComponent } from './components/angular-material/angular-material.component';
 import { DirectiveTaskComponent } from './components/directive/directive-task/directive-task.component';
+import { HooksParentComponent } from './components/hooks/hooks-parent/hooks-parent.component';
+import { ReactiveComponent } from './components/Forms/reactive/reactive.component';
+import { FormsTaskComponent } from './components/Forms/forms-task/forms-task.component';
+import { TemplateDrivenComponent } from './components/Forms/template-driven/template-driven.component';
+import { EmployeeComponent } from './components/Crud-operation/employee/employee.component';
+import { CrudComponent } from './components/Crud-operation-2/crud/crud.component';
+import { EditCrudComponent } from './components/Crud-operation-2/crud/edit-crud/edit-crud.component';
+import { LocalstorageComponent } from './components/Crud-operation-2/localstorage/localstorage.component';
 
 const routes: Routes = [
   //Databinding
@@ -115,22 +123,21 @@ const routes: Routes = [
   //angular-material
   {path:'angular-material',component:AngularMaterialComponent},
 
-  //hooks
-//  {path:"hooks/child",component:ChildComponent},
+//hooks
+{path:'hooks/parent',component:HooksParentComponent},
 
- //hooks-lifecycle
-//  {
-//   path:'hooks-lifecycle/parent-hooks',
-//   component:ParentComponent,
-//   children:[
-//     {path:'child-hooks',component:ChildHooksComponent},
-//     //{path:'child2',component:Child2Component}
-//   ]
-// },
+//forms
+{path:"forms/reactive",component:ReactiveComponent},
+{path:"forms/forms-task",component:FormsTaskComponent},
+{path:"forms/template-driven",component:TemplateDrivenComponent},
 
-// {path:'parentChild/parent-hooks/child-hooks',component:ChildHooksComponent},
-//{path:'parentChild/parent/child2',component:Child2Component},
+//crud-operation
+{path:"Crud-operation/employee",component:EmployeeComponent},
 
+//crud-operation-2
+{path:'crud-operation-2/crud',component:CrudComponent},
+{path:'crud-operation-2/edit-crud/:id',component:EditCrudComponent},
+{path:'crud-operation-2/localstorage',component:LocalstorageComponent},
 
 { path: '**', redirectTo: 'task' },
 

@@ -1,0 +1,25 @@
+<h1 class="crud heading">Crud operation</h1>
+
+<div class="crud-table-container">
+    <div class="table table-hover">
+        <table border="2px">
+            <thead>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Action</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let data of crudData, let i=index">
+                    <td>{{i+1}}</td>
+                    <td>{{data.name}}</td>
+                    <td>{{data.role}}</td>
+                    <td>
+                        <button class="btn btn-primary " [routerLink]="['/crud-operation-2/edit-crud',data.id]">Edit</button>&nbsp;
+                        <button class="btn btn-danger" (click)="onDelete()">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

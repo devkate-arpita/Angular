@@ -1,9 +1,9 @@
-<p>attribute works!</p>
-<p appHighlights >Hover this text see the effect</p>
-<hr>
+<div class="container">
+  <p appHighlights>Hover this text see the effect</p>
+  <hr>
 
 
-<p [ngStyle]="{'color': 'blue', 'font-size': '20px'}">
+  <p [ngStyle]="{'color': 'blue', 'font-size': '20px'}">
     This text is styled using ngStyle!
     dynamically apply inline styles to an element based on component properties.
   </p>
@@ -14,13 +14,15 @@
     This text color changes based on condition.
   </p>
   <button (click)="isSuccess = !isSuccess">Click me</button>
-<hr>  
+  <hr>
 
-<p [hidden]="isVisible">This para is visible when its value is true</p>
-<button (click)="isVisible=!isVisible">Click me!</button>
+  <p [hidden]="isVisible">This para is visible when its value is true</p>
+  <button (click)="isVisible=!isVisible">Click me!</button>
 
-<hr>
+  <hr>
 
-<input type="text" [disabled]="isDisable" placeholder="type something...." style="margin-right: 10px;"/>
-<button (click)="isDisable=!isDisable">Toggle Button</button>
-<hr>
+  when toggel button is disable the can't enter the text in text field <br>
+  <input type="text" [disabled]="isDisable" placeholder="type something...." style="margin-right: 10px;" />
+  <button (click)="isDisable=!isDisable">Toggle Button</button>
+  <hr>
+</div>

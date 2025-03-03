@@ -41,4 +41,6 @@ export class AppComponent {
   loadContent(topic: string) {
     this.selectedTopic = topic;
   }
+
+  
 }

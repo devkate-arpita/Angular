@@ -18,7 +18,6 @@ import { BuiltInPipesComponent } from './components/pipe/built-in-pipes/built-in
 import { CustomPipeComponent } from './components/pipe/custom-pipe/custom-pipe.component';
 import { ParentComponent } from './components/ParentChild/parent/parent.component';
 import { Child1Component } from './components/ParentChild/parent/child1/child1.component';
-import { Child2Component } from './components/ParentChild/parent/child2/child2.component';
 import { HtmlCssComponent } from './components/html-css/html-css.component';
 import { LoginFormComponent } from './components/HTML -CSS/login-form/login-form.component';
 import { HomeComponent } from './components/HTML -CSS/login-form/home/home.component';
@@ -34,6 +33,13 @@ import { EmployeeComponent } from './components/Crud-operation/employee/employee
 import { CrudComponent } from './components/Crud-operation-2/crud/crud.component';
 import { EditCrudComponent } from './components/Crud-operation-2/crud/edit-crud/edit-crud.component';
 import { LocalstorageComponent } from './components/Crud-operation-2/localstorage/localstorage.component';
+import { SignupComponent } from './components/task/signup/signup.component';
+import { LoginAdminUserComponent } from './components/task/login-admin-user/login-admin-user.component';
+import { AdminDashboardComponent } from './components/task/admin-dashboard/admin-dashboard.component';
+import { UserDashboardComponent } from './components/task/user-dashboard/user-dashboard.component';
+import { FirebaseSignupComponent } from './components/task/firebase-signup/firebase-signup.component';
+import { FirebaseRegisterComponent } from './components/task/firebase-register/firebase-register.component';
+import { DashboardComponent } from './components/task/dashboard/dashboard.component';
 
 const routes: Routes = [
   //Databinding
@@ -56,6 +62,13 @@ const routes: Routes = [
   },
   {path:'task/profile',component:ProfileComponent},
   {path:'task/admin-user-login',component:AdminUserLoginComponent},
+  {path:'task/signup',component:SignupComponent},
+  {path:'task/login-admin-user',component:LoginAdminUserComponent},
+  {path:'task/admin-dashboard',component:AdminDashboardComponent},
+  {path:'task/user-dashboard',component:UserDashboardComponent},
+  {path:'task/firebase-signup',component:FirebaseSignupComponent},
+  {path:'task/firebase-register',component:FirebaseRegisterComponent},
+  {path:'task/dashboard',component:DashboardComponent},
   {path:'pipe',component:PipeComponent},
   
 
@@ -79,17 +92,17 @@ const routes: Routes = [
 
 
   //Pipe
-  {
-    path:'pipe',
-    component:PipeComponent,
-    children:[
-      {path:'built-in-pipes',component:BuiltInPipesComponent},
-      {path:'custom-pipe',component:CustomPipeComponent}
-    ]
-  },
-
-  {path:'pipe/built-in-pipes',component:BuiltInPipesComponent},
-  {path:'pipe/custom-pipe',component:CustomPipeComponent},
+  // {
+  //   path:'pipe',
+  //   component:PipeComponent,
+  //   children:[
+  //     {path:'built-in-pipes',component:BuiltInPipesComponent},
+  //     {path:'custom-pipe',component:CustomPipeComponent}
+  //   ]
+  // },
+  
+  {path:'pipes/built-in-pipes',component:BuiltInPipesComponent},
+  {path:'pipes/custom-pipe',component:CustomPipeComponent},
 
 
   //Parent-child
@@ -98,12 +111,10 @@ const routes: Routes = [
     component:ParentComponent,
     children:[
       {path:'child1',component:Child1Component},
-      {path:'child2',component:Child2Component}
     ]
   },
 
   {path:'parentChild/parent/child1',component:Child1Component},
-  {path:'parentChild/parent/child2',component:Child2Component},
 
 
   //HTML-CSS

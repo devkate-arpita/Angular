@@ -24,7 +24,6 @@ import { BuiltInPipesComponent } from './components/pipe/built-in-pipes/built-in
 import { CustomPipeComponent } from './components/pipe/custom-pipe/custom-pipe.component';
 import { ParentComponent } from './components/ParentChild/parent/parent.component';
 import { Child1Component } from './components/ParentChild/parent/child1/child1.component';
-import { Child2Component } from './components/ParentChild/parent/child2/child2.component';
 import { HtmlCssComponent } from './components/html-css/html-css.component';
 import { LoginFormComponent } from './components/HTML -CSS/login-form/login-form.component';
 import { HomeComponent } from './components/HTML -CSS/login-form/home/home.component';
@@ -48,6 +47,20 @@ import { EmployeeComponent } from './components/Crud-operation/employee/employee
 import { CrudComponent } from './components/Crud-operation-2/crud/crud.component';
 import { EditCrudComponent } from './components/Crud-operation-2/crud/edit-crud/edit-crud.component';
 import { LocalstorageComponent } from './components/Crud-operation-2/localstorage/localstorage.component';
+import { SignupComponent } from './components/task/signup/signup.component';
+import { LoginAdminUserComponent } from './components/task/login-admin-user/login-admin-user.component';
+import { AdminDashboardComponent } from './components/task/admin-dashboard/admin-dashboard.component';
+import { UserDashboardComponent } from './components/task/user-dashboard/user-dashboard.component';
+import { CustomPipesComponent } from './components/pipes/custom-pipes/custom-pipes.component';
+// import{}from'.angular/fire/compact';
+import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
+import { provideAuth, getAuth } from '@angular/fire/auth';
+import { provideFirestore, getFirestore } from '@angular/fire/firestore';
+import { FirebaseSignupComponent } from './components/task/firebase-signup/firebase-signup.component';
+import { FirebaseRegisterComponent } from './components/task/firebase-register/firebase-register.component';
+import { DashboardComponent } from './components/task/dashboard/dashboard.component';
+import { environment } from 'src/environments/environment';
+
 
 @NgModule({
   declarations: [
@@ -72,7 +85,6 @@ import { LocalstorageComponent } from './components/Crud-operation-2/localstorag
     CustomPipeComponent,
     ParentComponent,
     Child1Component,
-    Child2Component,
     HtmlCssComponent,
     LoginFormComponent,
     HomeComponent,
@@ -89,6 +101,15 @@ import { LocalstorageComponent } from './components/Crud-operation-2/localstorag
     CrudComponent,
     EditCrudComponent,
     LocalstorageComponent,
+    SignupComponent,
+    LoginAdminUserComponent,
+    AdminDashboardComponent,
+    UserDashboardComponent,
+    CustomPipesComponent,
+    FirebaseSignupComponent,
+    FirebaseRegisterComponent,
+    DashboardComponent,
+    
   
     
 
@@ -105,7 +126,14 @@ import { LocalstorageComponent } from './components/Crud-operation-2/localstorag
     AngularMaterialComponent,
     CommonModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    // provideFirebaseApp(() => initializeApp(environment.firebaseConfig)), 
+    // provideAuth(() => getAuth()),
+    // provideFirestore(() => getFirestore())
+    
+    provideFirebaseApp(() => initializeApp(environment.firebase)), // This must match environment.ts
+    provideAuth(() => getAuth()),
+    provideFirestore(() => getFirestore())
 
     
   ],
@@ -113,3 +141,4 @@ import { LocalstorageComponent } from './components/Crud-operation-2/localstorag
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

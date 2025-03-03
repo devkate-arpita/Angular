@@ -1,5 +1,4 @@
-<p>structural works!</p>
-
+<div class="container">
 <p>*ngIf - Conditionally includes or removes an element based on a boolean expression.</p><hr>
 
 <p *ngIf="isVisible">This para will visible if isVisible is true</p>
@@ -28,8 +27,8 @@
 
 <p><b>Using *ngFor</b></p>
 
-<ul>
-    <li style="list-style-type: none;"*ngFor ="let item of items">{{item}}</li>
+<ul>list of fruits:
+    <li style="list-style-type: none;"*ngFor ="let item of items"> {{item}}</li>
 </ul>
 
 <hr>
@@ -55,5 +54,5 @@
 <button (click)="changeColor('purple')" style="background-color: purple;">Purple (default)</button>
 <hr>
 
-
+</div>
 

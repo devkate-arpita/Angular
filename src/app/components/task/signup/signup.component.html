@@ -1,0 +1,28 @@
+<div class="container" [attr.visiable]="isSignedUp ? true : null">
+    <h2>Signup Page</h2>
+    <div *ngIf="!isSignedUp">
+        <form (ngSubmit)="signUp()">
+            <label>Name:</label>
+            <input type="text" [(ngModel)]="user.name" name="name" required /><br />
+
+            <label>Email:</label>
+            <input type="email" [(ngModel)]="user.email" name="email" required /><br />
+
+            <label>Password:</label>
+            <input type="password" [(ngModel)]="user.password" name="password" required /><br />
+
+            <label>Role:</label>
+            <select [(ngModel)]="user.role" name="role">
+                <option value="user">User</option>
+                <option value="admin">Admin</option>
+            </select><br />
+
+            <button type="submit">Signup</button>
+            <p>Already have an account? <a (click)="goToLogin()">Login Here</a></p>
+        </form>
+    </div>
+</div>
+
+ <div *ngIf="isSignedUp">
+    <h3>signed up successfully! redirecting to login....</h3>
+</div> 

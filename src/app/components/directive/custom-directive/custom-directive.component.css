@@ -1,0 +1,51 @@
+.container {
+    width: 100%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Hover Effect for appHighlights */
+p[appHighlights] {
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+p[appHighlights]:hover {
+    background-color: yellow;
+    color: black;
+}
+
+/* Dynamic Text Size Styling */
+p#textElement {
+    font-size: 18px;
+    font-weight: bold;
+    transition: font-size 0.3s ease-in-out;
+}
+
+/* Button Styling */
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

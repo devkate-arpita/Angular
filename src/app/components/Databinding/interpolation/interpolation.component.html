@@ -1,7 +1,17 @@
-<p>interpolation works!</p>
+<!-- <p>interpolation works!</p> -->
 
-
+<div class="container">
 
 <p>Used to display component properties inside the template.</p>
-<h1>Welcome, {{ username }}</h1>
+<h1>Welcome, {{ username }}</h1><hr>
+<p>The current year is {{ getCurrentYear() }}.</p><hr>
+
+<p>5 + 3 = {{ 5 + 3 }}</p><hr>
+<p>Price with tax: {{ price + (price * tax / 100) }}</p><hr>
+
+<p>Today’s Date: {{ getTodayDate() }}</p>
+
+
+
+</div>
 

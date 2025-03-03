@@ -1,7 +1,23 @@
-<p>two-way-binding works!</p>
-<p>Synchronizes data between the component and the template in both directions.</p>
-<p>Used with ngModel (requires <b>FormsModule</b> in <b>app.module.ts</b>).</p>
+<div class="container">
+    <p>Two-way binding works!</p>
+    <hr>
+    <p>Synchronizes data between the component and the template in both directions.</p>
+    <p>Used with ngModel (requires <b>FormsModule</b> in <b>app.module.ts</b>).</p>
 
-<input [(ngModel)] ="name" />
-<p>Your name: {{ name }}</p>
+    <input [(ngModel)]="name" placeholder="Enter your name" />
+    <p>Your name: <span class="selected-text">{{ name }}</span></p>
+    <hr>
 
+    <p>Counter: <span class="selected-text">{{ counter }}</span></p>
+    <button (click)="decrease()">-</button>
+    <input type="number" class="counter-input" [(ngModel)]="counter">
+    <button (click)="increase()">+</button>
+    <hr>
+
+    <select [(ngModel)]="selectedColor">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+    </select>
+    <p [style.color]="selectedColor">You selected: {{ selectedColor }}</p>
+</div>

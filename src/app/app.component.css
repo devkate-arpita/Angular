@@ -1,184 +1,182 @@
-/* 🌍 General Styles */
+/* Global Styling */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  body {
-    background: linear-gradient(135deg, #f5f5f5, #e3e3e3);
-    color: black;
-    transition: all 0.5s ease;
-  }
-  
-  
-  .sidebar.dark-theme {
-    background: linear-gradient(135deg, #1c1c1c, #292929);
-    color: white;
-  }
-  /* 📌 Layout Container */
-  .container {
-    display: flex;
-    height: 100vh;
-  }
-  
-  /* 🎨 Sidebar */
-  .sidebar {
-    width: 260px;
-    height: 100vh;
-    padding: 20px;
-    /* background: linear-gradient(135deg, #3b5998, #192f6a); */
-    background-color: #f4f4f4; /* Light gray background */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    border-radius: 0 15px 15px 0;
-    transition: all 0.4s ease-in-out;
-    position: relative;
-  }
-  
-  /* 📌 Sidebar Toggle Button */
-  .sidebar-toggle {
-    position: absolute;
-    top: 15px;
-    left: 100%;
-    background: rgba(255, 255, 255, 0.2);
-    padding: 8px 12px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s;
-    font-size: 20px;
-  }
-  
-  .sidebar-toggle:hover {
-    background: rgba(255, 255, 255, 0.4);
-  }
-  
-  /* 🌙 Theme Toggle on Right Side */
-  .theme-toggle {
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    font-size: 24px;
-    cursor: pointer;
-    padding: 8px 12px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.2);
-    transition: all 0.3s;
-  }
-  
-  /* 🌙 Theme Toggle Hover Effect */
-  .theme-toggle:hover {
-    background: rgba(255, 255, 255, 0.4);
-    transform: rotate(360deg);
-  }
-  
-  /* 📜 Sidebar List */
-  .sidebar ul {
-    list-style: none;
-    padding: 0;
-    /* margin-top: 50px; */
-  }
-  
-  .sidebar li {
-    padding: 12px 15px;
-    font-size: 18px;
-    font-weight: 600;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: background 0.3s ease;
-    margin-bottom: 5px; /* Reduced space between topics */
-  }
-  
-  /* 🔥 Steady Hover Effect (No Movement) */
-  .sidebar li:hover {
-    background: rgba(255, 255, 255, 0.3);
-  }
-  
-  /* 🎭 Subtopics */
-  .subtopics {
-    padding-left: 5px;
-    margin-top: 0; 
-  }
-  
-  .subtopics li {
-    font-size: 16px;
-    font-weight: 500;
-    padding: 8px 15px; /* Reduced padding for tighter spacing */
-    border-radius: 5px;
-    transition: background 0.3s ease;
-    margin-top: 2px; /* Reduced space between subtopics */
-  }
-  
-  /* 💡 Subtopics Hover */
-  .subtopics li:hover {
-    background: rgba(255, 255, 255, 0.2);
-  }
-  
-  /* 📌 Content Area */
-  .content {
-    flex: 1;
-    padding: 40px;
-    text-align: center;
-    font-size: 20px;
-  }
-  
-  /* 📌 Hide Sidebar When Closed */
-  .sidebar.closed {
-    width: 70px;
-    padding: 20px 10px;
-  }
-  
-  .sidebar.closed ul li {
-    text-align: center;
-  }
-  
-  /* 📌 Hide Text When Sidebar is Closed */
-  .sidebar.closed ul li span {
-    display: none;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
 
-  /*  For title only*/
- /* 🌟 Title Topics Styling */
-.title-topics {
-  margin-bottom: 20px;
+body {
+  background: linear-gradient(135deg, #f5f5f5, #e3e3e3);
+  color: black;
+  transition: all 0.5s ease;
+}
+/* Main Container */
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  position: relative;}
+
+.content-box{
+  width: 1050px;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 260px;
+  background: linear-gradient(45deg, #2c3e50, #34495e);
+  color: #ffffff;
+  padding: 20px;
+  transition: width 0.3s ease-in-out;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+  box-shadow: 3px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensures sidebar is above content */
+}
+
+/* Show sidebar when open */
+.sidebar:not(.closed) {
+  transform: translateX(0);
+}
+
+/* Sidebar Header */
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 10px;
-  text-align: center;
-  background: linear-gradient(135deg, #3b5998, #1c1c8c);
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease;
-  width: 100%; /* Default full width */
-  overflow: hidden; /* Prevent text overflow */
 }
 
-.title-topics h3 {
-  font-size: 22px;
-  font-weight: 700;
-  color: white;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  white-space: nowrap; /* Prevents text from wrapping */
-  overflow: hidden; /* Hide overflowing text */
-  text-overflow: ellipsis; /* Show "..." when text is too long */
+/* Sidebar Toggle Button */
+.sidebar-toggle {
+  cursor: pointer;
+  font-size: 19px;
+  background: rgba(245, 245, 245, 0.2);
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
-/* 📌 When Sidebar is Closed */
-.sidebar.closed .title-topics {
-  width: 60px; /* Adjust width to fit within the collapsed sidebar */
-  padding: 5px; /* Reduce padding for compact size */
-}
-
-.sidebar.closed .title-topics h3 {
-  font-size: 14px; /* Shrink font size */
-  text-align: center;
-  text-overflow: ellipsis;
-  overflow: hidden;
+/* Sidebar Title */
+.sidebar-title {
+  font-size: 19px;
+  font-weight: bold;
   white-space: nowrap;
 }
 
-/* Reduce underline effect when sidebar is closed */
-.sidebar.closed .title-topics h3::after {
-  width: 30px;
+
+/* Sidebar Collapsed State */
+.sidebar.closed {
+  width: 70px;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.sidebar.closed .title-topics,
+.sidebar.closed ul,
+.sidebar.closed .theme-toggle {
+  display: none;
+}
+
+/* Sidebar Toggle Button */
+.sidebar-toggle {
+  cursor: pointer;
+  font-size: 24px;
+  text-align: right;
+  padding: 10px;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 12px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  /* display: flex; */
+  align-items: center;
+}
+
+.sidebar ul li:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Sidebar Links */
+.sidebar ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  display: block;
+  width: 100%;
+}
+
+/* Subtopics */
+.subtopics {
+  padding-left: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+.subtopics li {
+  padding: 8px 10px;
+}
+
+/* .subtopics span{
+    font-size: 17px;
+} */
+
+.subtopics li a {
+  font-size: 15px;
+}
+
+/* Main Content Styling */
+.content {
+  margin-left: 260px;
+  width: 1090px;
+  padding: 20px;
+  flex-grow: 1;
+  background: #ffffff;
+  /* box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); */
+
+
+  /* 
+  transition: margin-left 0.3s ease-in-out;*/
+}
+
+/* Hide content when sidebar is closed */
+.sidebar.closed ~ .content {
+  display: none;
+}
+
+/* Responsive Sidebar */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 60px;
+  }
+
+  .sidebar.closed {
+    width: 60px;
+  }
+
+  .content {
+    margin-left: 60px;
+  }
+
+  .sidebar.closed ~ .content {
+    display: none;
+  }
 }

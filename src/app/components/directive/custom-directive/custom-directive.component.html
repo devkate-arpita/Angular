@@ -1,3 +1,10 @@
-<p>custom-directive works!</p>
+<div class="container">
 <p appHighlights >Hover this text see the effect</p>
 <hr>
+
+<p #textElement>Click the button to change my size!</p>
+
+<!-- Buttons to control the text size -->
+<button (click)="increaseSize(textElement)">Increase Text Size</button>
+<button (click)="resetSize(textElement)">Reset Text Size</button>
+</div>

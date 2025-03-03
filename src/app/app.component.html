@@ -1,22 +1,23 @@
 <div class="container">
   <!-- Sidebar -->
   <nav [class.closed]="isSidebarClosed" class="sidebar">
-    <div class="title-topics">
-      <h3 style="margin-right: 20px;"><span>ANGULAR</span><br><span>TOPICS</span></h3>
+    <div class="sidebar-header">
+      <div class="sidebar-toggle" (click)="toggleSidebar()">☰</div>&nbsp;
+      <h3 class="sidebar-title" *ngIf="!isSidebarClosed">ANGULAR TOPICS</h3>
     </div>
-    
 
-    <div class="sidebar-toggle" (click)="toggleSidebar()">☰</div>
+
+   
     <!-- <div class="theme-toggle" (click)="toggleTheme()">
       {{ isDarkMode ? '🌞' : '🌙' }}
     </div> -->
     <!-- <div class="theme-toggle" (click)="toggleTheme()" >
       <span class="moon-sun-icon">{{ isDarkMode ? '🌞' : '🌙' }}</span>
     </div> -->
-    <div class="theme-toggle" (click)="toggleTheme()">
+    <!-- <div class="theme-toggle" (click)="toggleTheme()">
       <span class="moon-sun-icon">{{ isDarkMode ? '🌞' : '🌙' }}</span>
     </div>
-    
+     -->
     
     <ul>
 
@@ -29,7 +30,7 @@
       
        
       <li (click)="toggleDropdown('dataBinding')">
-        <span>1.Data Binding</span>
+        <span style="font-size: 18px;">1.Data Binding</span>
         <ul *ngIf="activeDropdown === 'dataBinding'" class="subtopics">
           <li><a routerLink="/databinding/interpolation" class="nav-link">Interpolation</a></li>
           <li><a routerLink="/databinding/event-binding" class="nav-link">Event Binding</a></li>
@@ -42,7 +43,7 @@
       </li>
 
       <li (click)="toggleDropdown('directive')">
-        <span>2.Directives</span>
+        <span style="font-size: 18px;">2.Directives</span>
         <ul *ngIf="activeDropdown === 'directive'" class="subtopics">
           <!-- <li><a routerLink="/" class="nav-link">T</a></li> -->
           <li><a routerLink="/directive/structural"class="nav-link">Structural</a></li>
@@ -53,7 +54,7 @@
       </li>
 
       <li (click)="toggleDropdown('pipe')">
-        <span>3.Pipe</span>
+        <span style="font-size: 18px;">3.Pipe</span>
         <ul *ngIf="activeDropdown === 'pipe'" class="subtopics">
           <li><a routerLink="/pipe/built-in-pipes" class="nav-link">Built-in Pipes</a></li>
           <li><a routerLink="/pipe/custom-pipe" class="nav-link">Custom Pipe</a></li>
@@ -61,26 +62,25 @@
       </li>
 
       <li (click)="toggleDropdown('parent-child')">
-        <span>4.Parent-Child</span>
+        <span style="font-size: 18px;">4.Parent-Child</span>
         <ul *ngIf="activeDropdown === 'parent-child'" class="subtopics">
           <!-- <li><a routerLink="/" class="nav-link">T</a></li> -->
           <li><a routerLink="/parentChild/parent"class="nav-link">Parent</a></li>
-          <li><a routerLink="/parentChild/parent/child1"class="nav-link">child1</a></li>
-          <li><a routerLink="/parentChild/parent/child2"class="nav-link">child2</a></li>
+          <!-- <li><a routerLink="/parentChild/parent/child1"class="nav-link">child1</a></li> -->
 
 
         </ul>
       </li>
 
       <li (click)="toggleDropdown('hooks')">
-        <span>6.Hooks</span>
+        <span style="font-size: 18px;">6.Hooks</span>
         <ul *ngIf="activeDropdown === 'hooks'" class="subtopics">
           <li><a routerLink="/hooks/parent" class="nav-link">All Hooks</a></li>
         </ul>
       </li>
 
       <li (click)="toggleDropdown('forms')">
-        <span>7.Forms</span>
+        <span style="font-size: 18px;">7.Forms</span>
         <ul *ngIf="activeDropdown === 'forms'" class="subtopics">
           <li><a routerLink="/forms/template-driven" class="nav-link">1.Template Driven</a></li>
           <li><a routerLink="/forms/reactive"lass="nav-link">2.Reactive </a></li>
@@ -91,17 +91,17 @@
       </li>
 
       <li (click)="toggleDropdown('html-css')">
-        <span>8.HTML-CSS</span>
+        <span style="font-size: 18px;">8.HTML-CSS</span>
         <ul *ngIf="activeDropdown === 'html-css'" class="subtopics">
           <li><a routerLink="/HTML-CSS/login-form" class="nav-link">1.Login-Form</a></li>
-          <li><a routerLink="/task/admin-user-login" class="nav-link">2.Admin-User-LoginForm</a></li>-->
+          <li><a routerLink="/task/admin-user-login" class="nav-link">2.Admin-User-LoginForm</a></li>
 
           
         </ul>
       </li>
 
       <li (click)="toggleDropdown('angular-material')">
-        <span>9.Angular Material</span>
+        <span style="font-size: 18px;">9.Angular Material</span>
         <ul *ngIf="activeDropdown === 'angular-material'" class="subtopics">
           <li><a routerLink="/angular-material" class="nav-link">angular-material</a></li> 
 
@@ -110,7 +110,7 @@
       </li>
 
       <li (click)="toggleDropdown('crud-operation')">
-        <span>10.Crud-operation</span>
+        <span style="font-size: 18px;">10.Crud-operation</span>
         <ul *ngIf="activeDropdown === 'crud-operation'" class="subtopics">
           <li><a routerLink="Crud-operation/employee" class="nav-link">1.crud-operation</a></li>
            <li><a routerLink="/crud-operation-2/crud" class="nav-link">2.Crud-operation Using services</a></li>
@@ -122,10 +122,13 @@
       </li>
 
       <li (click)="toggleDropdown('task')">
-        <span>11.Daily Task</span>
+        <span style="font-size: 18px;">11.Daily Task</span>
         <ul *ngIf="activeDropdown === 'task'" class="subtopics">
           <li><a routerLink="/task/profile" class="nav-link">1.Profile</a></li>
           <li><a routerLink="/task/admin-user-login" class="nav-link">2.Admin-User-LoginForm</a></li>
+          <li><a routerLink="/task/signup">3.Auth-Role using CRUD Crud-operation</a></li>
+          <li><a routerLink="task/firebase-signup">4.Auth-system with firebase</a></li>
+
 
           
         </ul>
@@ -142,7 +145,7 @@
 
 
   <!-- Content Area -->
-  <main class="content">
+  <main class="content" >
     <div class="content-box">
       <p *ngIf="!selectedTopic"> <router-outlet></router-outlet></p>
       <div *ngIf="selectedTopic">

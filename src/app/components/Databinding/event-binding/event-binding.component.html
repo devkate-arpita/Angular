@@ -1,4 +1,11 @@
-<p>event-binding works!</p>
-<p>Sends data from the template to the component when an event occurs.</p>
+<div class="container">
+    <p>Sends data from the template to the component when an event occurs.</p><hr>
 
-<button (click)="onClick()">Click Me</button>
+    <p>while clicking the button alert msg will display</p>
+    <button (click)="onClick()">Click Me</button>
+    <hr>
+    <p>while clicking the button count will increased by 1</p>
+    <button (dblclick)="resetCounter()">Double Click Me</button>
+    
+    <p class="counter">Counter: {{ counter }}</p>
+</div>

@@ -7,6 +7,16 @@ import { Component } from '@angular/core';
 })
 export class InterpolationComponent {
   username='arpita';
+  price: number = 100;
+  tax: number = 18;
+
+  getCurrentYear() {
+    return new Date().getFullYear();
+  }
+
+  getTodayDate() {
+    return new Date().toDateString();
+  }
 
 }  
 

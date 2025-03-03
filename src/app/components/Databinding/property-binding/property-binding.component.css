@@ -1,0 +1,32 @@
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+  }
+  
+  p {
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    margin: 10px 0;
+}
+
+hr {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.highlight {
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}

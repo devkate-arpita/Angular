@@ -7,12 +7,10 @@ import { Component } from '@angular/core';
 })
 export class ParentComponent {
   messageForChild1 = 'Hello Child 1!';
-  messageForChild2 = 'Hello Child 2!';
  
 
   // Variables to capture messages from children
   child1Message = '';
-  child2Message = '';
  
 
   // Handlers for messages from children
@@ -20,9 +18,7 @@ export class ParentComponent {
     this.child1Message = msg;
   }
 
-  handleChild2Message(msg:string){
-    this.child2Message = msg;
-  }
+ 
 
   
 }

@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class TwoWayBindingComponent {
     name = '';
+    counter: number = 0;
+    selectedColor: string = "red";
+
+    increase() {
+      this.counter++;
+    }
+  
+    decrease() {
+      this.counter--;
+    }
 }

@@ -17,5 +17,12 @@ export class HighlightsDirective {
       this.renderer.setStyle(this.el.nativeElement,'backgroundColor','transparent');
     }
   
+    increaseSize() {
+      this.el.nativeElement.style.fontSize = '24px'; // Increase size
+    }
+  
+    resetSize() {
+      this.el.nativeElement.style.fontSize = '16px'; // Reset size
+    }
 
 }

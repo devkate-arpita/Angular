@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class CustomDirectiveComponent {
 
+  increaseSize(element: HTMLElement) {
+    element.style.fontSize = '24px';
+  }
+
+  resetSize(element: HTMLElement) {
+    element.style.fontSize = '16px';
+  }
+
 }

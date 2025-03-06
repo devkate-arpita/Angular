@@ -38,8 +38,11 @@ import { LoginAdminUserComponent } from './components/task/login-admin-user/logi
 import { AdminDashboardComponent } from './components/task/admin-dashboard/admin-dashboard.component';
 import { UserDashboardComponent } from './components/task/user-dashboard/user-dashboard.component';
 import { FirebaseSignupComponent } from './components/task/firebase-signup/firebase-signup.component';
-import { FirebaseRegisterComponent } from './components/task/firebase-register/firebase-register.component';
 import { DashboardComponent } from './components/task/dashboard/dashboard.component';
+import { FirebaseLoginComponent } from './components/task/firebase-login/firebase-login.component';
+import { FirebaseRegisterComponent } from './components/task/firebase-register/firebase-register.component';
+import { FirebaseForgotpasswordComponent } from './components/task/firebase-forgotpassword/firebase-forgotpassword.component';
+import { FirebaseVerfiyemailComponent } from './components/task/firebase-verfiyemail/firebase-verfiyemail.component';
 
 const routes: Routes = [
   //Databinding
@@ -67,8 +70,11 @@ const routes: Routes = [
   {path:'task/admin-dashboard',component:AdminDashboardComponent},
   {path:'task/user-dashboard',component:UserDashboardComponent},
   {path:'task/firebase-signup',component:FirebaseSignupComponent},
+  {path:'task/firebase-login',component:FirebaseLoginComponent},
   {path:'task/firebase-register',component:FirebaseRegisterComponent},
   {path:'task/dashboard',component:DashboardComponent},
+  {path:'task/firebase-forgotpassword',component:FirebaseForgotpasswordComponent},
+  {path:'task/firebase-verifyemail',component:FirebaseVerfiyemailComponent},
   {path:'pipe',component:PipeComponent},
   
 

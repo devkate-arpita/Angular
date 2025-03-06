@@ -6,6 +6,9 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class AuthService {
+  register(email: string, password: string) {
+    throw new Error('Method not implemented.');
+  }
   private apiUrl = 'http://localhost:3000/users';
 
   constructor(private http:HttpClient) {    

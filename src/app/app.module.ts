@@ -57,9 +57,13 @@ import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
 import { provideAuth, getAuth } from '@angular/fire/auth';
 import { provideFirestore, getFirestore } from '@angular/fire/firestore';
 import { FirebaseSignupComponent } from './components/task/firebase-signup/firebase-signup.component';
-import { FirebaseRegisterComponent } from './components/task/firebase-register/firebase-register.component';
 import { DashboardComponent } from './components/task/dashboard/dashboard.component';
 import { environment } from 'src/environments/environment';
+import { FirebaseLoginComponent } from './components/task/firebase-login/firebase-login.component';
+import { FirebaseRegisterComponent } from './components/task/firebase-register/firebase-register.component';
+import { RouterModule } from '@angular/router';
+import { FirebaseForgotpasswordComponent } from './components/task/firebase-forgotpassword/firebase-forgotpassword.component';
+import { FirebaseVerfiyemailComponent } from './components/task/firebase-verfiyemail/firebase-verfiyemail.component';
 
 
 @NgModule({
@@ -107,8 +111,12 @@ import { environment } from 'src/environments/environment';
     UserDashboardComponent,
     CustomPipesComponent,
     FirebaseSignupComponent,
-    FirebaseRegisterComponent,
     DashboardComponent,
+    FirebaseLoginComponent,
+    FirebaseRegisterComponent,
+    FirebaseForgotpasswordComponent,
+    FirebaseVerfiyemailComponent,
+
     
   
     
@@ -127,6 +135,7 @@ import { environment } from 'src/environments/environment';
     CommonModule,
     ReactiveFormsModule,
     HttpClientModule,
+    RouterModule,
     // provideFirebaseApp(() => initializeApp(environment.firebaseConfig)), 
     // provideAuth(() => getAuth()),
     // provideFirestore(() => getFirestore())

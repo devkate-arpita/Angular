@@ -1,0 +1,82 @@
+/* Ensure the form is centered on the page */
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.card {
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Heading Styling */
+h4 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #343a40;
+}
+
+/* Input Fields */
+.form-control {
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #17a2b8;
+    box-shadow: 0 0 5px rgba(23, 162, 184, 0.5);
+}
+
+/* Button Styling */
+.btn-info {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 6px;
+    color: white;
+    background-color: #17a2b8;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-info:hover {
+    background-color: #138496;
+}
+
+/* Link Styling */
+a {
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+}
+
+a span {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .col-4 {
+        width: 90%;
+    }
+}

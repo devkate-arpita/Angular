@@ -64,6 +64,7 @@ import { FirebaseRegisterComponent } from './components/task/firebase-register/f
 import { RouterModule } from '@angular/router';
 import { FirebaseForgotpasswordComponent } from './components/task/firebase-forgotpassword/firebase-forgotpassword.component';
 import { FirebaseVerfiyemailComponent } from './components/task/firebase-verfiyemail/firebase-verfiyemail.component';
+import { StudentDataComponent } from './components/task/student-data/student-data.component';
 
 
 @NgModule({
@@ -116,6 +117,7 @@ import { FirebaseVerfiyemailComponent } from './components/task/firebase-verfiye
     FirebaseRegisterComponent,
     FirebaseForgotpasswordComponent,
     FirebaseVerfiyemailComponent,
+    StudentDataComponent,
 
     
   

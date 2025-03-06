@@ -28,6 +28,13 @@ export class FirebaseLoginComponent {
     this.email='';
     this.password='';
 
+    
+
   }
+  
+  signInWithGoogle(){
+    this.authservice.googleSignIn();
+  }
+
 
 }

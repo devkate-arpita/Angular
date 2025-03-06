@@ -43,6 +43,7 @@ import { FirebaseLoginComponent } from './components/task/firebase-login/firebas
 import { FirebaseRegisterComponent } from './components/task/firebase-register/firebase-register.component';
 import { FirebaseForgotpasswordComponent } from './components/task/firebase-forgotpassword/firebase-forgotpassword.component';
 import { FirebaseVerfiyemailComponent } from './components/task/firebase-verfiyemail/firebase-verfiyemail.component';
+import { StudentDataComponent } from './components/task/student-data/student-data.component';
 
 const routes: Routes = [
   //Databinding
@@ -75,6 +76,7 @@ const routes: Routes = [
   {path:'task/dashboard',component:DashboardComponent},
   {path:'task/firebase-forgotpassword',component:FirebaseForgotpasswordComponent},
   {path:'task/firebase-verifyemail',component:FirebaseVerfiyemailComponent},
+  {path:'task/student-data',component:StudentDataComponent},
   {path:'pipe',component:PipeComponent},
   
 
